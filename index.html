@@ -74,4 +74,185 @@
 
         section h2 {
             font-family: 'Playfair Display', serif;
-            color: var(--ma
+            color: var(--marrom);
+            font-size: 2.3rem;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .sobre p,
+        .contato p {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 1.05rem;
+        }
+
+        .servicos {
+            background-color: var(--cinza);
+        }
+
+        .servicos-lista {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .servico {
+            background-color: var(--branco);
+            padding: 35px;
+            border-radius: 10px;
+            border-top: 4px solid var(--laranja);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .servico h3 {
+            color: var(--marrom);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .servico ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .servico ul li {
+            margin-bottom: 8px;
+        }
+
+        .contato a {
+            color: var(--laranja);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: white;
+            padding: 14px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: var(--marrom);
+            color: var(--branco);
+            text-align: center;
+            padding: 30px 15px;
+            font-size: 0.85rem;
+        }
+
+        footer p {
+            max-width: 900px;
+            margin: auto;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header .logo {
+                width: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATsAAADsCAYAAAALkAHkAAAQAElEQVR4AexdBXwdVfb+Zp7F3Zom9dTdBepGC7RAi1McFqfLstgu" alt="Logo Divensi Advocacia">
+
+        <h1>Maria Luiza Divensi de Oliveira</h1>
+        <div class="dominio">divensiadvocacia.com.br</div>
+        <p>
+            Advogada especializada e comprometida com a orientação sobre direitos e deveres,
+            atuando na proteção das criações e inovações de empresas e pessoas naturais,
+            com soluções jurídicas multidisciplinares e integradas, sempre focadas no melhor atendimento ao cliente.
+        </p>
+    </div>
+</header>
+
+<section class="sobre">
+    <h2>Sobre</h2>
+    <p>
+        Advogada inscrita na OAB/PR sob o nº 116.920, formada há mais de 5 anos,
+        com atuação nas áreas do Direito Civil, Propriedade Intelectual e Direito Digital.
+        Pós-graduação em Direito Contratual, Direito Digital e Compliance, e Propriedade Intelectual.
+    </p>
+</section>
+
+<section class="servicos">
+    <h2>Áreas de Atuação</h2>
+    <div class="servicos-lista">
+
+        <div class="servico">
+            <h3>Direito Civil</h3>
+            <ul>
+                <li>Parte geral</li>
+                <li>Direito das obrigações</li>
+                <li>Contratos</li>
+                <li>Responsabilidade civil</li>
+            </ul>
+        </div>
+
+        <div class="servico">
+            <h3>Direito Digital</h3>
+            <ul>
+                <li>Proteção de dados pessoais (LGPD)</li>
+                <li>Privacidade e segurança da informação</li>
+                <li>Responsabilidade civil na internet</li>
+                <li>Contratos digitais e eletrônicos</li>
+            </ul>
+        </div>
+
+        <div class="servico">
+            <h3>Propriedade Intelectual</h3>
+            <ul>
+                <li>Marcas</li>
+                <li>Patentes</li>
+                <li>Software</li>
+                <li>Direitos autorais</li>
+                <li>Propriedade industrial</li>
+                <li>Combate à pirataria e uso indevido</li>
+                <li>Desenho industrial</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section class="contato">
+    <h2>Contato</h2>
+    <p>Telefone: <a href="tel:41997988677">(41) 99798-8677</a></p>
+    <p>E-mail: <a href="mailto:mldivensi@gmail.com">mldivensi@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/mldivensi" target="_blank">@mldivensi</a></p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5541997988677" target="_blank">
+    Contato via WhatsApp
+</a>
+
+<footer>
+    <p>
+        © 2026 – Maria Luiza Divensi de Oliveira – OAB/PR 116.920<br>
+        Divensi Advocacia – divensiadvocacia.com.br<br><br>
+        Este site possui caráter exclusivamente informativo, nos termos do
+        Provimento nº 205/2021 da OAB. As informações aqui contidas não constituem
+        promessa de resultado e não substituem consulta jurídica individualizada.
+    </p>
+</footer>
+
+</body>
+</html>
