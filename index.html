@@ -10,9 +10,9 @@
     <style>
         :root {
             --marrom: #5a3e2b;
-            --laranja: #d97706;
+            --marrom-claro: #efe9e4;
+            --destaque: #8b5e34;
             --branco: #ffffff;
-            --cinza: #efe9e4;
         }
 
         * {
@@ -29,9 +29,7 @@
         }
 
         header {
-            background:
-                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-                url("https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+            background-color: #2f1b12;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -43,16 +41,24 @@
 
         header .logo {
             width: 90px;
-            height: auto;
-            margin: 0 auto 18px auto;
+            margin: 0 auto 15px;
             display: block;
         }
 
         header h1 {
             font-family: 'Playfair Display', serif;
             font-size: 3rem;
-            color: var(--laranja);
+            color: #e0c08d;
             margin-bottom: 10px;
+        }
+
+        .balanca {
+            width: 320px;
+            max-width: 90%;
+            margin: 30px auto;
+            display: block;
+            border-radius: 6px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }
 
         header .dominio {
@@ -64,6 +70,7 @@
         header p {
             max-width: 900px;
             font-size: 1.05rem;
+            margin: auto;
         }
 
         section {
@@ -89,7 +96,7 @@
         }
 
         .servicos {
-            background-color: var(--cinza);
+            background-color: var(--marrom-claro);
         }
 
         .servicos-lista {
@@ -103,7 +110,7 @@
             background-color: var(--branco);
             padding: 35px;
             border-radius: 10px;
-            border-top: 4px solid var(--laranja);
+            border-top: 4px solid var(--destaque);
             box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
@@ -114,7 +121,6 @@
         }
 
         .servico ul {
-            list-style: disc;
             padding-left: 20px;
         }
 
@@ -123,24 +129,9 @@
         }
 
         .contato a {
-            color: var(--laranja);
+            color: var(--destaque);
             font-weight: 600;
             text-decoration: none;
-        }
-
-        .whatsapp {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background-color: #25d366;
-            color: white;
-            padding: 14px 18px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            z-index: 1000;
-            font-size: 0.9rem;
         }
 
         footer {
@@ -162,8 +153,8 @@
                 font-size: 2.2rem;
             }
 
-            header .logo {
-                width: 70px;
+            .balanca {
+                width: 260px;
             }
         }
     </style>
@@ -175,7 +166,12 @@
         <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATsAAADsCAYAAAALkAHkAAAQAElEQVR4AexdBXwdVfb+Zp7F3Zom9dTdBepGC7RAi1McFqfLstgu" alt="Logo Divensi Advocacia">
 
         <h1>Maria Luiza Divensi de Oliveira</h1>
+
+        <!-- IMAGEM DA BALANÇA -->
+        <img class="balanca" src="img/balanca.jpg" alt="Balança do Direito">
+
         <div class="dominio">divensiadvocacia.com.br</div>
+
         <p>
             Advogada especializada e comprometida com a orientação sobre direitos e deveres,
             atuando na proteção das criações e inovações de empresas e pessoas naturais,
@@ -240,17 +236,12 @@
     <p>Instagram: <a href="https://instagram.com/mldivensi" target="_blank">@mldivensi</a></p>
 </section>
 
-<a class="whatsapp" href="https://wa.me/5541997988677" target="_blank">
-    Contato via WhatsApp
-</a>
-
 <footer>
     <p>
         © 2026 – Maria Luiza Divensi de Oliveira – OAB/PR 116.920<br>
         Divensi Advocacia – divensiadvocacia.com.br<br><br>
         Este site possui caráter exclusivamente informativo, nos termos do
-        Provimento nº 205/2021 da OAB. As informações aqui contidas não constituem
-        promessa de resultado e não substituem consulta jurídica individualizada.
+        Provimento nº 205/2021 da OAB.
     </p>
 </footer>
 
