@@ -9,10 +9,11 @@
 
     <style>
         :root {
-            --marrom: #5a3e2b;
-            --laranja: #d97706;
+            --marrom-escuro: #4a2f1b;
+            --marrom: #6b3f1d;
+            --marrom-claro: #efe6dc;
             --branco: #ffffff;
-            --cinza: #f4f4f4;
+            --destaque: #b36a2e;
         }
 
         * {
@@ -32,7 +33,7 @@
         header {
             background:
                 linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-                url("https://images.unsplash.com/photo-1528740561666-dc2479dc1F2g") center/cover no-repeat;
+                url("https://images.unsplash.com/photo-1528740561666-dc2479dc1f2g") center/cover no-repeat;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -45,7 +46,6 @@
         /* LOGO */
         header .logo {
             width: 90px;
-            max-width: 20%;
             height: auto;
             margin: 0 auto 18px auto;
             display: block;
@@ -54,7 +54,7 @@
         header h1 {
             font-family: 'Playfair Display', serif;
             font-size: 3rem;
-            color: var(--laranja);
+            color: var(--destaque);
             margin-bottom: 10px;
         }
 
@@ -94,7 +94,7 @@
 
         /* SERVIÇOS */
         .servicos {
-            background-color: var(--cinza);
+            background-color: var(--marrom-claro);
         }
 
         .servicos-lista {
@@ -108,12 +108,12 @@
             background-color: var(--branco);
             padding: 35px;
             border-radius: 10px;
-            border-top: 4px solid var(--laranja);
+            border-top: 4px solid var(--destaque);
             box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
         .servico h3 {
-            color: var(--marrom);
+            color: var(--marrom-escuro);
             margin-bottom: 15px;
             font-size: 1.3rem;
         }
@@ -128,7 +128,7 @@
 
         /* CONTATO */
         .contato a {
-            color: var(--laranja);
+            color: var(--destaque);
             font-weight: 600;
             text-decoration: none;
         }
@@ -151,7 +151,7 @@
 
         /* FOOTER */
         footer {
-            background-color: var(--marrom);
+            background-color: var(--marrom-escuro);
             color: var(--branco);
             text-align: center;
             padding: 30px 15px;
@@ -171,7 +171,6 @@
 
             header .logo {
                 width: 70px;
-                margin-bottom: 15px;
             }
         }
     </style>
@@ -185,9 +184,10 @@
         <h1>Maria Luiza Divensi de Oliveira</h1>
         <div class="dominio">divensiadvocacia.com.br</div>
         <p>
-            Advogada comprometida com a proteção das criações e inovações de empresas
-            e pessoas naturais, oferecendo soluções jurídicas multidisciplinares
-            e integradas, sempre com foco no melhor atendimento ao cliente.
+            Advogada especializada e comprometida com a orientação sobre direitos e deveres,
+            atuando na proteção das criações e inovações de empresas e pessoas naturais,
+            com soluções jurídicas multidisciplinares e integradas, sempre focadas
+            no melhor atendimento ao cliente.
         </p>
     </div>
 </header>
@@ -221,7 +221,7 @@
                 <li>Proteção de dados pessoais (LGPD)</li>
                 <li>Privacidade e segurança da informação</li>
                 <li>Responsabilidade civil na internet</li>
-                <li>Contratos digitais e eletrônicos</li>
+                <li>Contratos digitais</li>
             </ul>
         </div>
 
@@ -232,7 +232,6 @@
                 <li>Patentes</li>
                 <li>Software</li>
                 <li>Direitos autorais</li>
-                <li>Propriedade industrial</li>
             </ul>
         </div>
 
@@ -243,6 +242,7 @@
     <h2>Contato</h2>
     <p>Telefone: <a href="tel:41997988677">(41) 99798-8677</a></p>
     <p>E-mail: <a href="mailto:mldivensi@gmail.com">mldivensi@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/mldivensi" target="_blank">@mldivensi</a></p>
 </section>
 
 <a class="whatsapp" href="https://wa.me/5541997988677" target="_blank">
