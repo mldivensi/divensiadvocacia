@@ -10,9 +10,9 @@
     <style>
         :root {
             --marrom: #5a3e2b;
-            --marrom-claro: #efe9e4;
-            --destaque: #8b5e34;
+            --marrom-claro: #8b6a55;
             --branco: #ffffff;
+            --cinza: #f4f4f4;
         }
 
         * {
@@ -28,50 +28,46 @@
             line-height: 1.6;
         }
 
-        /* TOPO */
+        /* HERO */
         header {
-            background-color: #2f1b12;
-            padding: 25px 20px 35px;
+            background:
+                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url("https://images.unsplash.com/photo-1528740561666-dc2479dc08ab") center/cover no-repeat;
+            padding: 40px 20px 45px;
             text-align: center;
             color: var(--branco);
-        }
-
-        header .logo {
-            width: 80px;
-            margin: 0 auto 10px;
-            display: block;
         }
 
         header h1 {
             font-family: 'Playfair Display', serif;
             font-size: 2.4rem;
-            color: #e0c08d;
+            color: #e0b26c;
             margin-bottom: 10px;
-        }
-
-        .deusa {
-            width: 240px;
-            max-width: 90%;
-            margin: 20px auto;
-            display: block;
-            border-radius: 6px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
         }
 
         header p {
             max-width: 900px;
             margin: auto;
-            font-size: 1.02rem;
+            font-size: 1.05rem;
         }
 
         header ul {
-            max-width: 700px;
-            margin: 15px auto 0;
+            max-width: 850px;
+            margin: 20px auto 0;
             text-align: left;
         }
 
         header ul li {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
+        }
+
+        /* IMAGEM DEUSA */
+        .deusa {
+            width: 220px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
         }
 
         /* SEÇÕES */
@@ -97,45 +93,61 @@
             font-size: 1.05rem;
         }
 
-        /* ÁREAS */
+        /* SERVIÇOS */
         .servicos {
-            background-color: var(--marrom-claro);
+            background-color: var(--cinza);
         }
 
         .servicos-lista {
             margin-top: 40px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
 
         .servico {
             background-color: var(--branco);
-            padding: 35px;
+            padding: 30px;
             border-radius: 10px;
-            border-top: 4px solid var(--destaque);
+            border-top: 4px solid var(--marrom-claro);
             box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
         .servico h3 {
             color: var(--marrom);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             font-size: 1.3rem;
         }
 
         .servico ul {
-            padding-left: 20px;
+            padding-left: 18px;
         }
 
         .servico ul li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         /* CONTATO */
         .contato a {
-            color: var(--destaque);
+            color: var(--marrom);
             font-weight: 600;
             text-decoration: none;
+        }
+
+        /* WHATSAPP */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            padding: 14px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            font-size: 0.9rem;
         }
 
         /* FOOTER */
@@ -153,38 +165,57 @@
             opacity: 0.9;
         }
 
-        @media (max-width: 768px) {
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            header {
+                padding: 30px 15px 35px;
+            }
+
             header h1 {
-                font-size: 2rem;
+                font-size: 1.9rem;
+            }
+
+            header p {
+                font-size: 0.95rem;
+            }
+
+            header ul {
+                font-size: 0.95rem;
             }
 
             .deusa {
-                width: 200px;
+                width: 180px;
+            }
+
+            section {
+                padding: 55px 15px;
+            }
+
+            section h2 {
+                font-size: 1.9rem;
             }
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATsAAADsCAYAAAALkAHkAAAQAElEQVR4AexdBXwdVfb+Zp7F3Zom9dTdBepGC7RAi1McFqfLstgu" alt="Logo">
-
     <h1>Maria Luiza Divensi de Oliveira</h1>
 
-    <!-- IMAGEM DA DEUSA DA JUSTIÇA -->
     <img class="deusa" src="img/deusa-justica.jpg" alt="Deusa da Justiça">
 
     <p>
-        Advogada especializada, comprometida com a defesa dos direitos e deveres, atuando
-        de forma estratégica para oferecer soluções jurídicas eficazes e personalizadas.
-        Cada atendimento é realizado com atenção, transparência e foco na melhor solução
-        para o seu caso.
+        Advogada especializada, comprometida com a defesa dos direitos e deveres, atuando de forma estratégica
+        para oferecer soluções jurídicas eficazes e personalizadas. Cada atendimento é realizado com atenção,
+        transparência e foco na melhor solução para o seu caso.
     </p>
 
     <ul>
-        <li>Direito Bancário – defesa contra cobranças abusivas, revisões contratuais e negociações com instituições financeiras.</li>
-        <li>Direito Civil – orientação e atuação em conflitos do dia a dia, contratos e responsabilidades civis.</li>
-        <li>Direito do Consumidor – proteção dos seus direitos em relações de consumo, cobranças indevidas e indenizações.</li>
+        <li><strong>Direito Bancário</strong> – defesa contra cobranças abusivas, revisões contratuais e negociações com instituições financeiras.</li>
+        <li><strong>Direito Civil</strong> – orientação e atuação em conflitos do dia a dia, contratos e responsabilidades civis.</li>
+        <li><strong>Direito do Consumidor</strong> – proteção dos seus direitos em relações de consumo, cobranças indevidas e indenizações.</li>
     </ul>
 </header>
 
@@ -217,22 +248,22 @@
             <ul>
                 <li>Revisão de contrato bancário</li>
                 <li>Busca e apreensão de veículos</li>
-                <li>Ações contra juros abusivos</li>
+                <li>Juros abusivos</li>
                 <li>Cobrança indevida</li>
-                <li>Indenização por danos morais</li>
                 <li>Fraudes bancárias</li>
-                <li>Negativação indevida do nome (SPC/Serasa)</li>
+                <li>Negativação indevida (SPC/Serasa)</li>
+                <li>Danos morais</li>
             </ul>
         </div>
 
         <div class="servico">
             <h3>Direito do Consumidor</h3>
             <ul>
-                <li>Indenização por danos morais e materiais</li>
+                <li>Danos morais e materiais</li>
                 <li>Troca ou devolução de produtos</li>
                 <li>Cancelamento de contratos abusivos</li>
-                <li>Repetição de indébito (devolução em dobro)</li>
-                <li>Negativação indevida do nome (SPC/Serasa)</li>
+                <li>Repetição de indébito</li>
+                <li>Negativação indevida (SPC/Serasa)</li>
             </ul>
         </div>
 
@@ -245,11 +276,15 @@
     <p>E-mail: <a href="mailto:mldivensi@gmail.com">mldivensi@gmail.com</a></p>
 </section>
 
+<a class="whatsapp" href="https://wa.me/5541997988677" target="_blank">
+    WhatsApp
+</a>
+
 <footer>
     <p>
         © 2026 – Maria Luiza Divensi de Oliveira – OAB/PR 116.920<br><br>
-        Este site possui caráter exclusivamente informativo, nos termos do
-        Provimento nº 205/2021 da OAB.
+        Este site possui caráter exclusivamente informativo, nos termos do Provimento nº 205/2021 da OAB.
+        As informações aqui contidas não constituem promessa de resultado.
     </p>
 </footer>
 
