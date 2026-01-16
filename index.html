@@ -62,7 +62,6 @@
             margin-bottom: 8px;
         }
 
-        /* SEÇÕES */
         section {
             max-width: 1100px;
             margin: auto;
@@ -78,14 +77,24 @@
         }
 
         .sobre p,
-        .contato p {
+        .contato p,
+        .info p {
             max-width: 900px;
             margin: auto;
             text-align: center;
             font-size: 1.05rem;
         }
 
-        /* SERVIÇOS */
+        .info ul {
+            max-width: 900px;
+            margin: 20px auto 0;
+            padding-left: 20px;
+        }
+
+        .info ul li {
+            margin-bottom: 8px;
+        }
+
         .servicos {
             background-color: var(--cinza);
         }
@@ -119,14 +128,12 @@
             margin-bottom: 6px;
         }
 
-        /* CONTATO */
         .contato a {
             color: var(--marrom);
             font-weight: 600;
             text-decoration: none;
         }
 
-        /* WHATSAPP */
         .whatsapp {
             position: fixed;
             bottom: 20px;
@@ -142,7 +149,6 @@
             font-size: 0.9rem;
         }
 
-        /* FOOTER */
         footer {
             background-color: var(--marrom);
             color: var(--branco);
@@ -157,12 +163,7 @@
             opacity: 0.9;
         }
 
-        /* MOBILE */
         @media (max-width: 600px) {
-            header {
-                padding: 28px 15px 34px;
-            }
-
             header h1 {
                 font-size: 1.9rem;
             }
@@ -197,7 +198,7 @@
     <ul>
         <li><strong>Direito Bancário</strong> – defesa contra cobranças abusivas, revisões contratuais e negociações com instituições financeiras.</li>
         <li><strong>Direito Civil</strong> – orientação e atuação em conflitos do dia a dia, contratos e responsabilidades civis.</li>
-        <li><strong>Direito do Consumidor</strong> – proteção dos seus direitos em relações de consumo, cobranças indevidas e indenizações.</li>
+        <li><strong>Direito do Consumidor</strong> – proteção dos direitos em relações de consumo e cobranças indevidas.</li>
     </ul>
 </header>
 
@@ -211,47 +212,39 @@
     </p>
 </section>
 
-<section class="servicos">
-    <h2>Áreas de Atuação</h2>
+<section class="info">
+    <h2>Como funciona o atendimento</h2>
+    <p>
+        O atendimento jurídico é realizado de forma personalizada, com análise inicial das informações
+        apresentadas, esclarecimento dos direitos e deveres envolvidos e definição da estratégia jurídica
+        adequada a cada situação, sempre observando a legislação vigente e as normas éticas da advocacia.
+    </p>
+</section>
 
-    <div class="servicos-lista">
-        <div class="servico">
-            <h3>Direito Civil</h3>
-            <ul>
-                <li>Direito das obrigações</li>
-                <li>Contratos</li>
-                <li>Responsabilidade civil</li>
-            </ul>
-        </div>
+<section class="info">
+    <h2>Diferenciais profissionais</h2>
+    <ul>
+        <li>Atendimento individualizado e humanizado</li>
+        <li>Clareza na comunicação jurídica</li>
+        <li>Atuação ética e responsável</li>
+        <li>Atualização constante na área jurídica</li>
+        <li>Compromisso com a transparência profissional</li>
+    </ul>
+</section>
 
-        <div class="servico">
-            <h3>Direito Bancário</h3>
-            <ul>
-                <li>Revisão de contrato bancário</li>
-                <li>Busca e apreensão de veículos</li>
-                <li>Juros abusivos</li>
-                <li>Cobrança indevida</li>
-                <li>Fraudes bancárias</li>
-                <li>Negativação indevida (SPC/Serasa)</li>
-                <li>Danos morais</li>
-            </ul>
-        </div>
-
-        <div class="servico">
-            <h3>Direito do Consumidor</h3>
-            <ul>
-                <li>Danos morais e materiais</li>
-                <li>Troca ou devolução de produtos</li>
-                <li>Cancelamento de contratos abusivos</li>
-                <li>Repetição de indébito</li>
-                <li>Negativação indevida (SPC/Serasa)</li>
-            </ul>
-        </div>
-    </div>
+<section class="info">
+    <h2>Perguntas frequentes</h2>
+    <ul>
+        <li><strong>Quando devo procurar um advogado?</strong><br> Sempre que houver dúvida jurídica ou necessidade de orientação preventiva ou contenciosa.</li>
+        <li><strong>Posso revisar um contrato bancário?</strong><br> A revisão contratual pode ser analisada conforme o caso concreto e a legislação aplicável.</li>
+        <li><strong>O que fazer em caso de cobrança indevida?</strong><br> É recomendável buscar orientação jurídica para análise da situação e adoção das medidas cabíveis.</li>
+        <li><strong>Negativação indevida gera direito à indenização?</strong><br> A possibilidade depende da análise das circunstâncias específicas do caso.</li>
+    </ul>
 </section>
 
 <section class="contato">
     <h2>Contato</h2>
+    <p>Para esclarecimento de dúvidas jurídicas, entre em contato.</p>
     <p>Telefone: <a href="tel:41997988677">(41) 99798-8677</a></p>
     <p>E-mail: <a href="mailto:mldivensi@gmail.com">mldivensi@gmail.com</a></p>
 </section>
