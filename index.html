@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria Luiza Divensi de Oliveira | Divensi Advocacia</title>
+    <title>Maria Luiza Divensi de Oliveira | Advocacia</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
@@ -28,61 +28,63 @@
             line-height: 1.6;
         }
 
+        /* TOPO */
         header {
             background-color: #2f1b12;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 25px 20px 35px;
             text-align: center;
-            padding: 40px 20px;
             color: var(--branco);
         }
 
         header .logo {
-            width: 90px;
-            margin: 0 auto 15px;
+            width: 80px;
+            margin: 0 auto 10px;
             display: block;
         }
 
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3rem;
+            font-size: 2.4rem;
             color: #e0c08d;
             margin-bottom: 10px;
         }
 
-        .balanca {
-            width: 320px;
+        .deusa {
+            width: 240px;
             max-width: 90%;
-            margin: 30px auto;
+            margin: 20px auto;
             display: block;
             border-radius: 6px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-        }
-
-        header .dominio {
-            font-size: 0.95rem;
-            opacity: 0.9;
-            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
         }
 
         header p {
             max-width: 900px;
-            font-size: 1.05rem;
             margin: auto;
+            font-size: 1.02rem;
         }
 
+        header ul {
+            max-width: 700px;
+            margin: 15px auto 0;
+            text-align: left;
+        }
+
+        header ul li {
+            margin-bottom: 6px;
+        }
+
+        /* SEÇÕES */
         section {
             max-width: 1100px;
             margin: auto;
-            padding: 80px 20px;
+            padding: 70px 20px;
         }
 
         section h2 {
             font-family: 'Playfair Display', serif;
             color: var(--marrom);
-            font-size: 2.3rem;
+            font-size: 2.2rem;
             text-align: center;
             margin-bottom: 25px;
         }
@@ -95,12 +97,13 @@
             font-size: 1.05rem;
         }
 
+        /* ÁREAS */
         .servicos {
             background-color: var(--marrom-claro);
         }
 
         .servicos-lista {
-            margin-top: 50px;
+            margin-top: 40px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 30px;
@@ -128,12 +131,14 @@
             margin-bottom: 8px;
         }
 
+        /* CONTATO */
         .contato a {
             color: var(--destaque);
             font-weight: 600;
             text-decoration: none;
         }
 
+        /* FOOTER */
         footer {
             background-color: var(--marrom);
             color: var(--branco);
@@ -150,11 +155,11 @@
 
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
 
-            .balanca {
-                width: 260px;
+            .deusa {
+                width: 200px;
             }
         }
     </style>
@@ -162,41 +167,45 @@
 <body>
 
 <header>
-    <div>
-        <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATsAAADsCAYAAAALkAHkAAAQAElEQVR4AexdBXwdVfb+Zp7F3Zom9dTdBepGC7RAi1McFqfLstgu" alt="Logo Divensi Advocacia">
+    <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATsAAADsCAYAAAALkAHkAAAQAElEQVR4AexdBXwdVfb+Zp7F3Zom9dTdBepGC7RAi1McFqfLstgu" alt="Logo">
 
-        <h1>Maria Luiza Divensi de Oliveira</h1>
+    <h1>Maria Luiza Divensi de Oliveira</h1>
 
-        <!-- IMAGEM DA BALANÇA -->
-        <img class="balanca" src="img/balanca.jpg" alt="Balança do Direito">
+    <!-- IMAGEM DA DEUSA DA JUSTIÇA -->
+    <img class="deusa" src="img/deusa-justica.jpg" alt="Deusa da Justiça">
 
-        <div class="dominio">divensiadvocacia.com.br</div>
+    <p>
+        Advogada especializada, comprometida com a defesa dos direitos e deveres, atuando
+        de forma estratégica para oferecer soluções jurídicas eficazes e personalizadas.
+        Cada atendimento é realizado com atenção, transparência e foco na melhor solução
+        para o seu caso.
+    </p>
 
-        <p>
-            Advogada especializada e comprometida com a orientação sobre direitos e deveres,
-            atuando na proteção das criações e inovações de empresas e pessoas naturais,
-            com soluções jurídicas multidisciplinares e integradas, sempre focadas no melhor atendimento ao cliente.
-        </p>
-    </div>
+    <ul>
+        <li>Direito Bancário – defesa contra cobranças abusivas, revisões contratuais e negociações com instituições financeiras.</li>
+        <li>Direito Civil – orientação e atuação em conflitos do dia a dia, contratos e responsabilidades civis.</li>
+        <li>Direito do Consumidor – proteção dos seus direitos em relações de consumo, cobranças indevidas e indenizações.</li>
+    </ul>
 </header>
 
 <section class="sobre">
     <h2>Sobre</h2>
     <p>
-        Advogada inscrita na OAB/PR sob o nº 116.920, formada há mais de 5 anos,
-        com atuação nas áreas do Direito Civil, Propriedade Intelectual e Direito Digital.
-        Pós-graduação em Direito Contratual, Direito Digital e Compliance, e Propriedade Intelectual.
+        Advogada inscrita na OAB/PR sob o nº 116.920, com mais de cinco anos de formação,
+        atuando nas áreas de Direito Civil, Direito Bancário e Direito do Consumidor.
+        Possui experiência profissional adquirida em escritórios de advocacia em Curitiba,
+        além de pós-graduação em Direito Contratual e cursos de especialização na área jurídica.
     </p>
 </section>
 
 <section class="servicos">
     <h2>Áreas de Atuação</h2>
+
     <div class="servicos-lista">
 
         <div class="servico">
             <h3>Direito Civil</h3>
             <ul>
-                <li>Parte geral</li>
                 <li>Direito das obrigações</li>
                 <li>Contratos</li>
                 <li>Responsabilidade civil</li>
@@ -204,25 +213,26 @@
         </div>
 
         <div class="servico">
-            <h3>Direito Digital</h3>
+            <h3>Direito Bancário</h3>
             <ul>
-                <li>Proteção de dados pessoais (LGPD)</li>
-                <li>Privacidade e segurança da informação</li>
-                <li>Responsabilidade civil na internet</li>
-                <li>Contratos digitais e eletrônicos</li>
+                <li>Revisão de contrato bancário</li>
+                <li>Busca e apreensão de veículos</li>
+                <li>Ações contra juros abusivos</li>
+                <li>Cobrança indevida</li>
+                <li>Indenização por danos morais</li>
+                <li>Fraudes bancárias</li>
+                <li>Negativação indevida do nome (SPC/Serasa)</li>
             </ul>
         </div>
 
         <div class="servico">
-            <h3>Propriedade Intelectual</h3>
+            <h3>Direito do Consumidor</h3>
             <ul>
-                <li>Marcas</li>
-                <li>Patentes</li>
-                <li>Software</li>
-                <li>Direitos autorais</li>
-                <li>Propriedade industrial</li>
-                <li>Combate à pirataria e uso indevido</li>
-                <li>Desenho industrial</li>
+                <li>Indenização por danos morais e materiais</li>
+                <li>Troca ou devolução de produtos</li>
+                <li>Cancelamento de contratos abusivos</li>
+                <li>Repetição de indébito (devolução em dobro)</li>
+                <li>Negativação indevida do nome (SPC/Serasa)</li>
             </ul>
         </div>
 
@@ -233,13 +243,11 @@
     <h2>Contato</h2>
     <p>Telefone: <a href="tel:41997988677">(41) 99798-8677</a></p>
     <p>E-mail: <a href="mailto:mldivensi@gmail.com">mldivensi@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/mldivensi" target="_blank">@mldivensi</a></p>
 </section>
 
 <footer>
     <p>
-        © 2026 – Maria Luiza Divensi de Oliveira – OAB/PR 116.920<br>
-        Divensi Advocacia – divensiadvocacia.com.br<br><br>
+        © 2026 – Maria Luiza Divensi de Oliveira – OAB/PR 116.920<br><br>
         Este site possui caráter exclusivamente informativo, nos termos do
         Provimento nº 205/2021 da OAB.
     </p>
