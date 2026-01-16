@@ -1,264 +1,292 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria Luiza Divensi de Oliveira | Advocacia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maria Luiza Divensi de Oliveira | Advocacia</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --marrom: #5a3e2b;
-            --marrom-claro: #8b6a55;
-            --branco: #ffffff;
-            --cinza: #f4f4f4;
-        }
+<style>
+:root {
+    --marrom: #5a3e2b;
+    --marrom-claro: #8b6a55;
+    --pastel: #f6efe9;
+    --pastel-2: #efe4d8;
+    --branco: #ffffff;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: #333;
-            background-color: var(--branco);
-            line-height: 1.6;
-        }
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: var(--branco);
+    line-height: 1.6;
+}
 
-        /* HERO */
-        header {
-            background:
-                linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-                url("https://images.unsplash.com/photo-1589820731936-5f9b1c68b3e3?auto=format&fit=crop&w=1600&q=80")
-                center/cover no-repeat;
-            padding: 32px 20px 40px;
-            text-align: center;
-            color: var(--branco);
-        }
+/* HERO */
+header {
+    background:
+        linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)),
+        url("https://images.unsplash.com/photo-1589820731936-5f9b1c68b3e3?auto=format&fit=crop&w=1600&q=80")
+        center/cover no-repeat;
+    padding: 35px 20px 45px;
+    text-align: center;
+    color: var(--branco);
+}
 
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.3rem;
-            color: #e0b26c;
-            margin-bottom: 14px;
-        }
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: #e6c27a;
+    margin-bottom: 14px;
+}
 
-        header p {
-            max-width: 900px;
-            margin: auto;
-            font-size: 1.05rem;
-        }
+header p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.05rem;
+}
 
-        header ul {
-            max-width: 850px;
-            margin: 20px auto 0;
-            text-align: left;
-        }
+header ul {
+    max-width: 850px;
+    margin: 22px auto 0;
+    text-align: left;
+}
 
-        header ul li {
-            margin-bottom: 8px;
-        }
+header ul li {
+    margin-bottom: 8px;
+}
 
-        section {
-            max-width: 1100px;
-            margin: auto;
-            padding: 65px 20px;
-        }
+/* SEÇÕES */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 65px 20px;
+}
 
-        section h2 {
-            font-family: 'Playfair Display', serif;
-            color: var(--marrom);
-            font-size: 2.2rem;
-            text-align: center;
-            margin-bottom: 25px;
-        }
+section h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--marrom);
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 28px;
+}
 
-        .sobre p,
-        .contato p,
-        .info p {
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-            font-size: 1.05rem;
-        }
+/* SOBRE */
+.sobre {
+    background-color: var(--pastel);
+}
 
-        .info ul {
-            max-width: 900px;
-            margin: 20px auto 0;
-            padding-left: 20px;
-        }
+.sobre p,
+.info p,
+.contato p {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.05rem;
+}
 
-        .info ul li {
-            margin-bottom: 8px;
-        }
+/* ÁREAS */
+.areas {
+    background-color: var(--branco);
+}
 
-        .servicos {
-            background-color: var(--cinza);
-        }
+.areas-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
 
-        .servicos-lista {
-            margin-top: 40px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
+.area {
+    background-color: var(--pastel-2);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid var(--marrom);
+}
 
-        .servico {
-            background-color: var(--branco);
-            padding: 30px;
-            border-radius: 10px;
-            border-top: 4px solid var(--marrom-claro);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-        }
+.area h3 {
+    color: var(--marrom);
+    margin-bottom: 10px;
+}
 
-        .servico h3 {
-            color: var(--marrom);
-            margin-bottom: 12px;
-            font-size: 1.3rem;
-        }
+/* INFO */
+.info {
+    background-color: var(--pastel);
+}
 
-        .servico ul {
-            padding-left: 18px;
-        }
+.info ul {
+    max-width: 900px;
+    margin: 20px auto 0;
+    padding-left: 20px;
+}
 
-        .servico ul li {
-            margin-bottom: 6px;
-        }
+.info ul li {
+    margin-bottom: 8px;
+}
 
-        .contato a {
-            color: var(--marrom);
-            font-weight: 600;
-            text-decoration: none;
-        }
+/* FAQ */
+.faq {
+    background-color: var(--branco);
+}
 
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            padding: 14px 18px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            z-index: 1000;
-            font-size: 0.9rem;
-        }
+.faq ul {
+    max-width: 900px;
+    margin: auto;
+    padding-left: 20px;
+}
 
-        footer {
-            background-color: var(--marrom);
-            color: var(--branco);
-            text-align: center;
-            padding: 30px 15px;
-            font-size: 0.85rem;
-        }
+.faq li {
+    margin-bottom: 14px;
+}
 
-        footer p {
-            max-width: 900px;
-            margin: auto;
-            opacity: 0.9;
-        }
+/* CONTATO */
+.contato {
+    background-color: var(--pastel);
+}
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.9rem;
-            }
+.contato a {
+    color: var(--marrom);
+    font-weight: 600;
+    text-decoration: none;
+}
 
-            header p,
-            header ul {
-                font-size: 0.95rem;
-            }
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
 
-            section {
-                padding: 55px 15px;
-            }
+/* FOOTER */
+footer {
+    background-color: var(--marrom);
+    color: var(--branco);
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 0.85rem;
+}
 
-            section h2 {
-                font-size: 1.9rem;
-            }
-        }
-    </style>
+footer p {
+    max-width: 900px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    section {
+        padding: 55px 15px;
+    }
+
+    section h2 {
+        font-size: 1.9rem;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Maria Luiza Divensi de Oliveira</h1>
-
-    <p>
-        Advogada especializada, comprometida com a defesa dos direitos e deveres,
-        atuando de forma estratégica para oferecer soluções jurídicas eficazes e personalizadas.
-        Cada atendimento é realizado com atenção, transparência e foco na melhor solução para o seu caso.
-    </p>
-
-    <ul>
-        <li><strong>Direito Bancário</strong> – defesa contra cobranças abusivas, revisões contratuais e negociações com instituições financeiras.</li>
-        <li><strong>Direito Civil</strong> – orientação e atuação em conflitos do dia a dia, contratos e responsabilidades civis.</li>
-        <li><strong>Direito do Consumidor</strong> – proteção dos direitos em relações de consumo e cobranças indevidas.</li>
-    </ul>
+<h1>Maria Luiza Divensi de Oliveira</h1>
+<p>
+Advogada especializada, comprometida com a defesa dos direitos e deveres,
+atuando de forma estratégica para oferecer soluções jurídicas eficazes e personalizadas.
+Cada atendimento é realizado com atenção, transparência e foco na melhor solução para o seu caso.
+</p>
 </header>
 
 <section class="sobre">
-    <h2>Sobre</h2>
-    <p>
-        Advogada inscrita na OAB/PR sob o nº 116.920, com mais de cinco anos de formação,
-        atuando nas áreas de Direito Civil, Direito Bancário e Direito do Consumidor.
-        Possui experiência profissional adquirida em escritórios de advocacia em Curitiba,
-        além de pós-graduação em Direito Contratual e cursos de especialização na área jurídica.
-    </p>
+<h2>Sobre</h2>
+<p>
+Advogada inscrita na OAB/PR sob o nº 116.920, com mais de cinco anos de formação,
+atuando nas áreas de Direito Civil, Direito Bancário e Direito do Consumidor.
+Possui experiência profissional adquirida em escritórios de advocacia em Curitiba,
+além de pós-graduação em Direito Contratual e cursos de especialização na área jurídica.
+</p>
+</section>
+
+<section class="areas">
+<h2>Áreas de Atuação</h2>
+<div class="areas-lista">
+<div class="area">
+<h3>Direito Civil</h3>
+<p>Atuação em conflitos do dia a dia, contratos e responsabilidade civil.</p>
+</div>
+<div class="area">
+<h3>Direito Bancário</h3>
+<p>Revisões contratuais, cobranças indevidas, busca e apreensão e fraudes bancárias.</p>
+</div>
+<div class="area">
+<h3>Direito do Consumidor</h3>
+<p>Proteção dos direitos do consumidor, indenizações e negativação indevida.</p>
+</div>
+</div>
 </section>
 
 <section class="info">
-    <h2>Como funciona o atendimento</h2>
-    <p>
-        O atendimento jurídico é realizado de forma personalizada, com análise inicial das informações
-        apresentadas, esclarecimento dos direitos e deveres envolvidos e definição da estratégia jurídica
-        adequada a cada situação, sempre observando a legislação vigente e as normas éticas da advocacia.
-    </p>
+<h2>Diferenciais Profissionais</h2>
+<ul>
+<li>Atendimento próximo e individualizado</li>
+<li>Linguagem jurídica clara e descomplicada</li>
+<li>Ética e responsabilidade em cada atuação</li>
+<li>Constante atualização jurídica</li>
+<li>Compromisso com a transparência</li>
+</ul>
 </section>
 
-<section class="info">
-    <h2>Diferenciais profissionais</h2>
-    <ul>
-        <li>Atendimento individualizado e humanizado</li>
-        <li>Clareza na comunicação jurídica</li>
-        <li>Atuação ética e responsável</li>
-        <li>Atualização constante na área jurídica</li>
-        <li>Compromisso com a transparência profissional</li>
-    </ul>
-</section>
+<section class="faq">
+<h2>Perguntas Frequentes</h2>
+<ul>
+<li><strong>O que é a busca e apreensão de veículo?</strong><br>
+Trata-se de uma medida judicial que pode ser adotada em casos de inadimplência em contratos de financiamento,
+sendo necessária a análise do contrato e das circunstâncias do caso.</li>
 
-<section class="info">
-    <h2>Perguntas frequentes</h2>
-    <ul>
-        <li><strong>Quando devo procurar um advogado?</strong><br> Sempre que houver dúvida jurídica ou necessidade de orientação preventiva ou contenciosa.</li>
-        <li><strong>Posso revisar um contrato bancário?</strong><br> A revisão contratual pode ser analisada conforme o caso concreto e a legislação aplicável.</li>
-        <li><strong>O que fazer em caso de cobrança indevida?</strong><br> É recomendável buscar orientação jurídica para análise da situação e adoção das medidas cabíveis.</li>
-        <li><strong>Negativação indevida gera direito à indenização?</strong><br> A possibilidade depende da análise das circunstâncias específicas do caso.</li>
-    </ul>
+<li><strong>É possível se defender em ação de busca e apreensão?</strong><br>
+Cada situação deve ser analisada individualmente, observando-se o contrato e a legislação aplicável.</li>
+
+<li><strong>O que significa bloqueio de conta bancária?</strong><br>
+O bloqueio pode ocorrer por determinação judicial ou administrativa, sendo importante verificar a origem e a legalidade da medida.</li>
+
+<li><strong>Posso questionar judicialmente um bloqueio bancário?</strong><br>
+A possibilidade depende da análise do caso concreto, dos valores envolvidos e da fundamentação do bloqueio.</li>
+</ul>
 </section>
 
 <section class="contato">
-    <h2>Contato</h2>
-    <p>Para esclarecimento de dúvidas jurídicas, entre em contato.</p>
-    <p>Telefone: <a href="tel:41997988677">(41) 99798-8677</a></p>
-    <p>E-mail: <a href="mailto:mldivensi@gmail.com">mldivensi@gmail.com</a></p>
+<h2>Contato</h2>
+<p>Para esclarecimento de dúvidas jurídicas, entre em contato.</p>
+<p>Telefone: <a href="tel:41997988677">(41) 99798-8677</a></p>
+<p>E-mail: <a href="mailto:mldivensi@gmail.com">mldivensi@gmail.com</a></p>
 </section>
 
-<a class="whatsapp" href="https://wa.me/5541997988677" target="_blank">
-    WhatsApp
-</a>
+<a class="whatsapp" href="https://wa.me/5541997988677" target="_blank">WhatsApp</a>
 
 <footer>
-    <p>
-        © 2026 – Maria Luiza Divensi de Oliveira – OAB/PR 116.920<br><br>
-        Este site possui caráter exclusivamente informativo, nos termos do Provimento nº 205/2021 da OAB.
-        As informações aqui contidas não constituem promessa de resultado.
-    </p>
+<p>
+© 2026 – Maria Luiza Divensi de Oliveira – OAB/PR 116.920<br><br>
+Este site possui caráter exclusivamente informativo, nos termos do Provimento nº 205/2021 da OAB.
+As informações aqui contidas não constituem promessa de resultado.
+</p>
 </footer>
 
 </body>
