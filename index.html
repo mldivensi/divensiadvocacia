@@ -9,11 +9,11 @@
 
 <style>
 :root {
-    --marrom: #5a3e2b;
-    --marrom-claro: #8b6a55;
-    --pastel: #f6efe9;
-    --pastel-2: #efe4d8;
+    --azul: #1f3d4c;
+    --azul-claro: #355f73;
+    --bege: #f5f3ef;
     --branco: #ffffff;
+    --dourado: #c9a24d;
 }
 
 * {
@@ -24,18 +24,18 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #333;
-    background-color: var(--branco);
+    color: #2e2e2e;
+    background-color: var(--bege);
     line-height: 1.6;
 }
 
 /* HERO */
 header {
     background:
-        linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)),
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
         url("https://images.unsplash.com/photo-1589820731936-5f9b1c68b3e3?auto=format&fit=crop&w=1600&q=80")
         center/cover no-repeat;
-    padding: 35px 20px 45px;
+    padding: 40px 20px 50px;
     text-align: center;
     color: var(--branco);
 }
@@ -43,7 +43,7 @@ header {
 header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.4rem;
-    color: #e6c27a;
+    color: var(--dourado);
     margin-bottom: 14px;
 }
 
@@ -53,26 +53,16 @@ header p {
     font-size: 1.05rem;
 }
 
-header ul {
-    max-width: 850px;
-    margin: 22px auto 0;
-    text-align: left;
-}
-
-header ul li {
-    margin-bottom: 8px;
-}
-
 /* SEÇÕES */
 section {
     max-width: 1100px;
     margin: auto;
-    padding: 65px 20px;
+    padding: 70px 20px;
 }
 
 section h2 {
     font-family: 'Playfair Display', serif;
-    color: var(--marrom);
+    color: var(--azul);
     font-size: 2.2rem;
     text-align: center;
     margin-bottom: 28px;
@@ -80,7 +70,7 @@ section h2 {
 
 /* SOBRE */
 .sobre {
-    background-color: var(--pastel);
+    background-color: var(--branco);
 }
 
 .sobre p,
@@ -94,7 +84,7 @@ section h2 {
 
 /* ÁREAS */
 .areas {
-    background-color: var(--branco);
+    background-color: var(--bege);
 }
 
 .areas-lista {
@@ -105,20 +95,21 @@ section h2 {
 }
 
 .area {
-    background-color: var(--pastel-2);
-    padding: 30px;
+    background-color: var(--branco);
+    padding: 32px;
     border-radius: 12px;
-    border-left: 5px solid var(--marrom);
+    border-left: 6px solid var(--azul-claro);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
 .area h3 {
-    color: var(--marrom);
+    color: var(--azul);
     margin-bottom: 10px;
 }
 
 /* INFO */
 .info {
-    background-color: var(--pastel);
+    background-color: var(--branco);
 }
 
 .info ul {
@@ -133,7 +124,7 @@ section h2 {
 
 /* FAQ */
 .faq {
-    background-color: var(--branco);
+    background-color: var(--bege);
 }
 
 .faq ul {
@@ -148,11 +139,11 @@ section h2 {
 
 /* CONTATO */
 .contato {
-    background-color: var(--pastel);
+    background-color: var(--branco);
 }
 
 .contato a {
-    color: var(--marrom);
+    color: var(--azul);
     font-weight: 600;
     text-decoration: none;
 }
@@ -174,7 +165,7 @@ section h2 {
 
 /* FOOTER */
 footer {
-    background-color: var(--marrom);
+    background-color: var(--azul);
     color: var(--branco);
     text-align: center;
     padding: 30px 15px;
@@ -230,7 +221,7 @@ além de pós-graduação em Direito Contratual e cursos de especialização na 
 <div class="areas-lista">
 <div class="area">
 <h3>Direito Civil</h3>
-<p>Atuação em conflitos do dia a dia, contratos e responsabilidade civil.</p>
+<p>Contratos, responsabilidade civil e conflitos do cotidiano.</p>
 </div>
 <div class="area">
 <h3>Direito Bancário</h3>
@@ -238,7 +229,7 @@ além de pós-graduação em Direito Contratual e cursos de especialização na 
 </div>
 <div class="area">
 <h3>Direito do Consumidor</h3>
-<p>Proteção dos direitos do consumidor, indenizações e negativação indevida.</p>
+<p>Indenizações, negativação indevida e proteção do consumidor.</p>
 </div>
 </div>
 </section>
@@ -257,18 +248,17 @@ além de pós-graduação em Direito Contratual e cursos de especialização na 
 <section class="faq">
 <h2>Perguntas Frequentes</h2>
 <ul>
-<li><strong>O que é a busca e apreensão de veículo?</strong><br>
-Trata-se de uma medida judicial que pode ser adotada em casos de inadimplência em contratos de financiamento,
-sendo necessária a análise do contrato e das circunstâncias do caso.</li>
+<li><strong>O que é busca e apreensão de veículo?</strong><br>
+É uma medida judicial prevista em contratos de financiamento, cuja aplicação depende da análise do contrato e do caso concreto.</li>
 
 <li><strong>É possível se defender em ação de busca e apreensão?</strong><br>
-Cada situação deve ser analisada individualmente, observando-se o contrato e a legislação aplicável.</li>
+Cada situação deve ser analisada individualmente, considerando a legislação aplicável.</li>
 
-<li><strong>O que significa bloqueio de conta bancária?</strong><br>
-O bloqueio pode ocorrer por determinação judicial ou administrativa, sendo importante verificar a origem e a legalidade da medida.</li>
+<li><strong>O que é bloqueio de conta bancária?</strong><br>
+Pode ocorrer por ordem judicial ou administrativa, sendo necessário verificar sua legalidade.</li>
 
 <li><strong>Posso questionar judicialmente um bloqueio bancário?</strong><br>
-A possibilidade depende da análise do caso concreto, dos valores envolvidos e da fundamentação do bloqueio.</li>
+A possibilidade depende da análise das circunstâncias específicas do caso.</li>
 </ul>
 </section>
 
