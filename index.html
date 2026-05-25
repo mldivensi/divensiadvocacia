@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maria Luiza Divensi de Oliveira | MD Advogados</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<title>MD Advogados</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-:root {
-    --azul: #6b4423;
-    --azul-secundario: #8B5E3C;
-    --offwhite: #F2EAE0;
-    --branco: #fdf8f3;
-    --cinza: #7a5c42;
-    --cinza-claro: #e0d4c4;
-    --sombra: rgba(107, 68, 35, 0.10);
+:root{
+    --azul:#081521;
+    --azul2:#0f2231;
+    --dourado:#b89252;
+    --branco:#ffffff;
+    --off:#f6f4f1;
+    --texto:#2e2e2e;
+    --cinza:#676767;
+    --linha:#e7dfd1;
 }
 
 *{
@@ -30,17 +35,17 @@ html{
 }
 
 body{
-    font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    background-color:var(--offwhite);
-    color:var(--azul);
+    font-family:'Inter',sans-serif;
+    background:var(--off);
+    color:var(--texto);
     line-height:1.7;
 }
 
 .container{
     width:100%;
-    max-width:1180px;
+    max-width:1250px;
     margin:auto;
-    padding:0 24px;
+    padding:0 30px;
 }
 
 /* NAVBAR */
@@ -51,39 +56,66 @@ nav{
     top:0;
     left:0;
     z-index:999;
-    background:rgba(253,248,243,0.96);
+    background:rgba(5,12,18,0.88);
     backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(0,0,0,0.04);
+    border-bottom:1px solid rgba(184,146,82,0.25);
 }
 
-.nav-content{
+.navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 0;
+    padding:22px 0;
 }
 
 .logo{
-    font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    font-size:1.15rem;
-    font-weight:700;
-    color:var(--azul);
-}
-
-.nav-links{
     display:flex;
-    gap:28px;
+    align-items:center;
+    gap:16px;
 }
 
-.nav-links a{
+.logo strong{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    color:var(--dourado);
+    font-weight:600;
+    line-height:1;
+}
+
+.logo span{
+    color:var(--branco);
+    letter-spacing:4px;
+    font-size:1.2rem;
+    font-weight:300;
+}
+
+.menu{
+    display:flex;
+    gap:55px;
+}
+
+.menu a{
+    color:var(--branco);
     text-decoration:none;
-    color:var(--cinza);
     font-size:0.95rem;
+    letter-spacing:1px;
+    transition:0.3s;
+    position:relative;
+}
+
+.menu a::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:1px;
+    background:var(--dourado);
+    left:0;
+    bottom:-6px;
     transition:0.3s;
 }
 
-.nav-links a:hover{
-    color:var(--azul);
+.menu a:hover::after{
+    width:100%;
 }
 
 /* HERO */
@@ -93,34 +125,46 @@ header{
     display:flex;
     align-items:center;
     justify-content:center;
-    padding-top:100px;
+    text-align:center;
+
     background:
-    linear-gradient(rgba(20,30,38,0.78), rgba(20,30,38,0.78)),
-    url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-    color:white;
+    linear-gradient(rgba(3,10,18,0.82), rgba(3,10,18,0.82)),
+    url('https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+    background-position:center;
+    color:var(--branco);
+    padding:120px 20px 80px;
 }
 
 .hero{
-    max-width:760px;
-    text-align:center;
+    max-width:980px;
 }
 
 .hero h1{
-    font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    font-size:3.6rem;
-    line-height:1.1;
-    margin-bottom:26px;
-    color:white;
+    font-family:'Cormorant Garamond',serif;
+    font-size:6rem;
+    line-height:0.95;
+    font-weight:600;
+    margin-bottom:35px;
+}
+
+.hero-line{
+    width:70px;
+    height:2px;
+    background:var(--dourado);
+    margin:0 auto 35px;
 }
 
 .hero p{
-    font-size:1.12rem;
-    color:rgba(255,255,255,0.86);
-    max-width:680px;
-    margin:0 auto;
+    max-width:920px;
+    margin:auto;
+    font-size:1.45rem;
+    line-height:1.8;
+    color:rgba(255,255,255,0.88);
 }
 
-/* SECTION */
+/* SECTIONS */
 
 section{
     padding:110px 0;
@@ -132,215 +176,235 @@ section{
 }
 
 .section-title span{
-    display:block;
-    margin-bottom:12px;
+    color:var(--dourado);
     text-transform:uppercase;
-    letter-spacing:1px;
-    font-size:0.85rem;
-    color:var(--cinza);
+    letter-spacing:4px;
+    font-size:0.9rem;
+}
+
+.section-title .line{
+    width:45px;
+    height:2px;
+    background:var(--dourado);
+    margin:14px auto 0;
 }
 
 .section-title h2{
-    font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    font-size:2.8rem;
-}
-
-.section-description{
-    max-width:760px;
-    margin:auto;
-    text-align:center;
-    color:var(--cinza);
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    margin-top:18px;
+    font-weight:600;
 }
 
 /* SOBRE */
 
 .sobre{
-    background:var(--branco);
+    background:var(--off);
 }
 
-.sobre-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
+.sobre-texto{
+    max-width:950px;
+    margin:auto;
+    text-align:center;
 }
 
-.sobre-box{
-    background:var(--offwhite);
-    padding:42px;
-    border-radius:24px;
-}
-
-.sobre-box p{
-    color:var(--cinza);
-    margin-bottom:18px;
-}
-
-.sobre-destaques{
-    display:grid;
-    gap:22px;
-}
-
-.destaque{
-    background:var(--branco);
-    padding:28px;
-    border-radius:22px;
-    box-shadow:0 10px 30px var(--sombra);
-}
-
-.destaque h3{
-    margin-bottom:10px;
-}
-
-.destaque p{
-    color:var(--cinza);
-}
-
-/* AREAS */
-
-.areas{
-    background:var(--offwhite);
-}
-
-.areas-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:28px;
-}
-
-.area-card{
-    background:var(--branco);
-    padding:38px 34px;
-    border-radius:24px;
-    box-shadow:0 8px 25px var(--sombra);
-    transition:0.3s;
-}
-
-.area-card:hover{
-    transform:translateY(-6px);
-}
-
-.area-card h3{
-    margin-bottom:14px;
+.sobre-texto p{
+    margin-bottom:26px;
     font-size:1.2rem;
-}
-
-.area-card p{
-    color:var(--cinza);
+    color:#444;
 }
 
 /* DIFERENCIAIS */
 
 .diferenciais{
-    background:var(--branco);
-}
-
-.diferenciais-grid{
+    margin-top:70px;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:24px;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px;
+    text-align:center;
 }
 
-.diferencial{
-    background:var(--offwhite);
-    padding:34px 28px;
-    border-radius:22px;
+.item{
+    padding:10px 25px;
+    border-right:1px solid #ddd;
 }
 
-.diferencial h3{
-    margin-bottom:12px;
+.item:last-child{
+    border-right:none;
 }
 
-.diferencial p{
+.item i{
+    font-size:2.4rem;
+    color:var(--dourado);
+    margin-bottom:20px;
+    display:block;
+}
+
+.item h3{
+    font-size:1.45rem;
+    margin-bottom:14px;
+    font-weight:500;
+}
+
+.item p{
     color:var(--cinza);
+}
+
+/* ÁREAS */
+
+.areas{
+    background:#f3f1ed;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:transparent;
+    border:1px solid var(--linha);
+    padding:45px 35px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:var(--branco);
+    transform:translateY(-4px);
+}
+
+.card i{
+    font-size:2.5rem;
+    color:var(--dourado);
+    margin-bottom:22px;
+    display:block;
+}
+
+.card h3{
+    margin-bottom:16px;
+    font-size:1.5rem;
+    font-weight:500;
+}
+
+.card p{
+    color:var(--cinza);
+    font-size:1rem;
 }
 
 /* CONTATO */
 
 .contato{
-    background:var(--offwhite);
+    background:
+    linear-gradient(rgba(4,12,20,0.92), rgba(4,12,20,0.92)),
+    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+    background-position:center;
+    color:white;
 }
 
-.contato-box{
-    max-width:500px;
-    margin:auto;
-    background:var(--branco);
-    padding:42px;
-    border-radius:24px;
+.contato .section-title h2{
+    color:white;
+}
+
+.contato-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:50px;
 }
 
 .contato-item{
+    text-align:center;
+    border-right:1px solid rgba(255,255,255,0.15);
+    padding:10px 20px;
+}
+
+.contato-item:last-child{
+    border-right:none;
+}
+
+.contato-item i{
+    font-size:2rem;
+    color:var(--dourado);
     margin-bottom:20px;
-}
-
-.contato-item span{
     display:block;
-    font-size:0.9rem;
-    color:var(--cinza);
-    margin-bottom:4px;
 }
 
-.contato-item a,
-.contato-item p{
-    color:var(--azul);
-    text-decoration:none;
+.contato-item h3{
+    margin-bottom:12px;
+    font-size:1.2rem;
     font-weight:500;
 }
 
-/* WHATSAPP */
-
-.whatsapp{
-    position:fixed;
-    bottom:22px;
-    right:22px;
-    background:#25d366;
-    color:white;
+.contato-item p,
+.contato-item a{
+    color:rgba(255,255,255,0.85);
     text-decoration:none;
-    padding:15px 20px;
-    border-radius:999px;
-    font-weight:600;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* FOOTER */
 
 footer{
-    background:#4a2e14;
-    color:rgba(255,255,255,0.75);
+    background:#07111a;
+    color:rgba(255,255,255,0.7);
     text-align:center;
-    padding:42px 20px;
-    font-size:0.88rem;
+    padding:40px 20px;
+    font-size:0.92rem;
+    line-height:1.8;
 }
 
 /* RESPONSIVO */
 
-@media(max-width:900px){
+@media(max-width:1000px){
 
-    .sobre-grid{
+    .cards{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .diferenciais{
         grid-template-columns:1fr;
     }
 
-    .hero h1{
-        font-size:3rem;
+    .item{
+        border-right:none;
+        border-bottom:1px solid #ddd;
+        padding-bottom:40px;
+    }
+
+    .contato-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contato-item{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,0.12);
+        padding-bottom:35px;
     }
 }
 
-@media(max-width:680px){
+@media(max-width:700px){
 
-    .nav-links{
+    .hero h1{
+        font-size:3.8rem;
+    }
+
+    .hero p{
+        font-size:1.1rem;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .menu{
         display:none;
     }
 
-    .hero h1{
-        font-size:2.3rem;
-    }
-
-    section{
-        padding:80px 0;
-    }
-
     .section-title h2{
-        font-size:2rem;
+        font-size:3rem;
     }
 }
 
@@ -350,36 +414,41 @@ footer{
 <body>
 
 <nav>
-<div class="container nav-content">
+
+<div class="container navbar">
 
 <div class="logo">
-MD Advogados
+<strong>MD</strong>
+<span>ADVOGADOS</span>
 </div>
 
-<div class="nav-links">
-<a href="#sobre">Sobre</a>
-<a href="#areas">Atuação</a>
-<a href="#contato">Contato</a>
+<div class="menu">
+<a href="#sobre">SOBRE</a>
+<a href="#areas">ÁREAS DE ATUAÇÃO</a>
+<a href="#contato">CONTATO</a>
 </div>
 
 </div>
+
 </nav>
 
-<!-- HERO centralizado na imagem -->
 <header>
-<div class="container">
+
 <div class="hero">
 
-<img src="/mnt/user-data/uploads/icone.jpg" alt="MD Advogados" class="hero-logo">
+<h1>
+Assessoria e<br>
+Consultoria Jurídica
+</h1>
 
-<h1>Assessoria e Consultoria Jurídica</h1>
+<div class="hero-line"></div>
 
 <p>
 Atuação voltada às pessoas físicas e jurídicas, para proteção patrimonial, contratos, ativos intangíveis e segurança empresarial, com abordagem estratégica e personalizada.
 </p>
 
 </div>
-</div>
+
 </header>
 
 <section class="sobre" id="sobre">
@@ -387,13 +456,12 @@ Atuação voltada às pessoas físicas e jurídicas, para proteção patrimonial
 <div class="container">
 
 <div class="section-title">
-<span>Sobre</span>
+<span>SOBRE</span>
+<div class="line"></div>
 <h2>Atuação estratégica e personalizada</h2>
 </div>
 
-<div class="sobre-grid">
-
-<div class="sobre-box">
+<div class="sobre-texto">
 
 <p>
 Maria Luiza Divensi de Oliveira é advogada inscrita na OAB/PR sob o nº 116.920, com atuação voltada à assessoria e consultoria jurídica estratégica.
@@ -409,23 +477,26 @@ Seu trabalho é direcionado à construção de soluções jurídicas personaliza
 
 </div>
 
-<div class="sobre-destaques">
+<div class="diferenciais">
 
-<div class="destaque">
+<div class="item">
+<i>◌</i>
 <h3>Atendimento Personalizado</h3>
 <p>
 Cada demanda é analisada de forma individualizada, considerando a realidade e os objetivos do cliente.
 </p>
 </div>
 
-<div class="destaque">
+<div class="item">
+<i>◎</i>
 <h3>Visão Estratégica</h3>
 <p>
 Atuação voltada à prevenção de riscos e proteção patrimonial.
 </p>
 </div>
 
-<div class="destaque">
+<div class="item">
+<i>⌘</i>
 <h3>Atualização Constante</h3>
 <p>
 Acompanhamento contínuo das transformações jurídicas relacionadas à tecnologia, negócios e inovação.
@@ -435,7 +506,7 @@ Acompanhamento contínuo das transformações jurídicas relacionadas à tecnolo
 </div>
 
 </div>
-</div>
+
 </section>
 
 <section class="areas" id="areas">
@@ -443,48 +514,54 @@ Acompanhamento contínuo das transformações jurídicas relacionadas à tecnolo
 <div class="container">
 
 <div class="section-title">
-<span>Áreas de atuação</span>
-<h2>Áreas de Atuação</h2>
+<span>ÁREAS DE ATUAÇÃO</span>
+<div class="line"></div>
 </div>
 
-<div class="areas-grid">
+<div class="cards">
 
-<div class="area-card">
+<div class="card">
+<i>%</i>
 <h3>Direito Tributário</h3>
 <p>
 Planejamento tributário, consultoria estratégica para estruturação fiscal, regimes especiais, defesas administrativas e contencioso tributário.
 </p>
 </div>
 
-<div class="area-card">
+<div class="card">
+<i>◈</i>
 <h3>Propriedade Intelectual</h3>
 <p>
 Proteção de marcas, patentes, software, direitos autorais, ativos intangíveis, estratégias e consultivo relacionadas à propriedade intelectual.
 </p>
 </div>
 
-<div class="area-card">
+<div class="card">
+<i>⇄</i>
 <h3>Contratos</h3>
 <p>
 Elaboração, revisão e negociação de contratos.
 </p>
 </div>
 
-<div class="area-card">
+<div class="card">
+<i>▣</i>
 <h3>Direito Empresarial</h3>
 <p>
 Assessoria estratégica para empresas, prevenção de riscos e suporte jurídico empresarial.
 </p>
 </div>
 
-<div class="area-card">
+<div class="card">
+<i>⌂</i>
 <h3>Negócios Digitais</h3>
 <p>
 Atuação jurídica relacionada à tecnologia, plataformas digitais, softwares e operações online.
 </p>
 </div>
 
-<div class="area-card">
+<div class="card">
+<i>⚖</i>
 <h3>Contencioso</h3>
 <p>
 Atuação abrangente em disputas envolvendo responsabilidade civil, ações indenizatórias, direitos obrigacionais e relações de consumo.
@@ -492,50 +569,9 @@ Atuação abrangente em disputas envolvendo responsabilidade civil, ações inde
 </div>
 
 </div>
-</div>
-</section>
-
-<section class="diferenciais">
-
-<div class="container">
-
-<div class="section-title">
-<span>Diferenciais</span>
-<h2>Uma advocacia moderna e próxima</h2>
-</div>
-
-<div class="diferenciais-grid">
-
-<div class="diferencial">
-<h3>Linguagem Clara</h3>
-<p>
-Comunicação acessível, transparente e alinhada à realidade do cliente.
-</p>
-</div>
-
-<div class="diferencial">
-<h3>Atuação Estratégica</h3>
-<p>
-Análise jurídica voltada à prevenção de riscos e construção de soluções eficientes.
-</p>
-</div>
-
-<div class="diferencial">
-<h3>Visão Estratégica</h3>
-<p>
-Atendimento conectado às necessidades práticas de pessoas físicas e jurídicas.
-</p>
-</div>
-
-<div class="diferencial">
-<h3>Atendimento Humanizado</h3>
-<p>
-Proximidade, disponibilidade e acompanhamento individualizado em cada demanda.
-</p>
-</div>
 
 </div>
-</div>
+
 </section>
 
 <section class="contato" id="contato">
@@ -543,46 +579,44 @@ Proximidade, disponibilidade e acompanhamento individualizado em cada demanda.
 <div class="container">
 
 <div class="section-title">
-<span>Contato</span>
+<span>CONTATO</span>
+<div class="line"></div>
 <h2>Entre em contato</h2>
 </div>
 
-<div class="contato-box">
-
-<h3>Informações</h3>
+<div class="contato-grid">
 
 <div class="contato-item">
-<span>Telefone</span>
-<a href="tel:41997988677">(41) 99798-8677</a>
-</div>
-
-<div class="contato-item">
-<span>E-mail</span>
-<a href="mailto:mldivensi@gmail.com">mldivensi@gmail.com</a>
+<i>◉</i>
+<h3>Telefone</h3>
+<p>(41) 99798-8677</p>
 </div>
 
 <div class="contato-item">
-<span>Atendimento</span>
-<p>Atendimento online em todo o país</p>
+<i>✉</i>
+<h3>E-mail</h3>
+<p>mldivensi@gmail.com</p>
+</div>
+
+<div class="contato-item">
+<i>◎</i>
+<h3>Atendimento</h3>
+<p>Atendimento online em todo o país.</p>
 </div>
 
 </div>
 
 </div>
+
 </section>
-
-<a class="whatsapp" href="https://wa.me/5541997988677" target="_blank">
-WhatsApp
-</a>
 
 <footer>
 
-<p>
 © 2026 – Maria Luiza Divensi de Oliveira – OAB/PR 116.920
 <br><br>
+
 Este site possui caráter exclusivamente informativo, nos termos do Provimento nº 205/2021 da OAB.
 As informações aqui contidas não constituem promessa de resultado.
-</p>
 
 </footer>
 
